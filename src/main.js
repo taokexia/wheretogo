@@ -4,6 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// 初始化css样式
+import './assets/reset.css'
+
+import home from './pages/home/home'
+import './assets/styles/resets.css'
+import './assets/styles/iconfont.css'
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
