@@ -4,6 +4,7 @@
         <span class="iconfont back-iconfont">&#xe624;</span>
     </div>
     <div class="header-input">
+        <span class="iconfont">&#xe632;</span>
         <input type="text" class="input-text" :placeholder="searchTip">
     </div>
     <div class="header-right">
@@ -16,7 +17,7 @@
     export default {
         data() {
             return {
-                searchTip: "输入城市"
+                searchTip: "输入城市/景点/游玩主题"
             }
         }
     }

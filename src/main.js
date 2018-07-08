@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
 
 // 初始化css样式
 import './assets/reset.css'
@@ -10,8 +12,10 @@ import './assets/reset.css'
 import home from './pages/home/home'
 import './assets/styles/resets.css'
 import './assets/styles/iconfont.css'
+import 'swiper/dist/css/swiper.css'
 
 Vue.config.productionTip = false
+Vue.use(VueAwesomeSwiper)
 
 /* eslint-disable no-new */
 new Vue({
