@@ -5,6 +5,7 @@
         <HomeIcons :list="iconList"></HomeIcons>
         <HomeRecommend :recommend='recommends'></HomeRecommend>
         <HomeWeekend :recommend='recommends'></HomeWeekend>
+        <router-view></router-view>
     </div>
 </template>
 

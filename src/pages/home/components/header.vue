@@ -7,9 +7,11 @@
         <span class="iconfont">&#xe632;</span>
         <input type="text" class="input-text" :placeholder="searchTip">
     </div>
-    <div class="header-right">
-        北京
-    </div>
+    <router-link to="/city">
+        <div class="header-right">
+            {{cityLocation}}
+        </div>
+    </router-link>
 </div>
 </template>
 
@@ -18,6 +20,11 @@
         data() {
             return {
                 searchTip: "输入城市/景点/游玩主题"
+            }
+        },
+        computed: {
+            cityLocation() {
+                return this.$store.state['city'].cityLocation;
             }
         }
     }
